@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wmh-BN-0p2">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
@@ -22,6 +22,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-153" y="-29"/>
+        </scene>
+        <!--Safari View Controller-->
+        <scene sceneID="Zg0-jV-A2Q">
+            <objects>
+                <viewController id="Wmh-BN-0p2" customClass="SafariViewController" customModule="WKWebView_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ERu-mn-6ru">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa9-zk-O5h">
+                                <rect key="frame" x="137.66666666666666" y="408.66666666666669" width="118" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Safariを表示"/>
+                                <connections>
+                                    <action selector="safariButtonDidTap:" destination="jzY-0a-4NB" eventType="touchUpInside" id="9eM-wu-iQ7"/>
+                                    <action selector="safariButtonDidTap:" destination="Wmh-BN-0p2" eventType="touchUpInside" id="o1T-zM-1eZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fpy-mf-ZBe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oa9-zk-O5h" firstAttribute="centerX" secondItem="ERu-mn-6ru" secondAttribute="centerX" id="Mk6-zs-8i8"/>
+                            <constraint firstItem="oa9-zk-O5h" firstAttribute="centerY" secondItem="ERu-mn-6ru" secondAttribute="centerY" id="grS-zN-ZqW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9z-H7-aHF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="jzY-0a-4NB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="748"/>
         </scene>
     </scenes>
     <resources>

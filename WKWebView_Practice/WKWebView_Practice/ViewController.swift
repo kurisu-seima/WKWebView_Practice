@@ -142,9 +142,6 @@ extension ViewController: WKUIDelegate {
         })
         present(alert, animated: true, completion: nil)
     }
-    
-    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
-    }
 }
 
 extension ViewController: WKNavigationDelegate {
